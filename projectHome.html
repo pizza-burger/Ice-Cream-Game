@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ice Cream Bar Game</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body style="font-family:Helvetica;">
+
+	<section id="theGame">
+		<button class="btn btn-danger col-4 btn-lg btn-block" onclick="newGame();">New Game</button>
+		<article id="timer" class="span4" style="text-align:center; font-size:1.5em; font-family:Helvetica;">Time Remaining:</article>
+		<article id="score" class="span4" style="text-align:center; font-size:1.5em; font-family:Helvetica;">Player Score:</article>
+		<article id="highScore" class="span3" style="text-align:center; font-size:1.5em; font-family:Helvetica;">High Score:</article>
+		<canvas id="drawing_surface"width="800" height="600" class="center-block  well" style="margin-top:2em;">A rectangle</canvas><br>
+		<button class="btn btn-danger col-4 btn-lg center-block" onclick="finishIceCream();">Done!</button>
+		<button class="btn btn-danger col-4 btn-lg center-block" style="margin-top:1em;" onclick="resetScoop();">Reset Scoop</button>
+	</section>
+	<hr>
+	<section id="instructions">
+		<h1 style="text-align:center; font-size:2em;">Instructions</h1>
+		<p style="text-align:center; margin-left:10em; margin-right:10em;">Click "New Game" at the top of the page to begin a new game. Try to match the ice cream 
+		flavours shown on the top right by clicking on the ice cream dispensers. Each time you click a dispenser, you add a scoop of that flavour to your cone 
+		(shown on the bottom). When you are done, click on the "Done!" button and continue matching the new scoops on the top left. Click on "Reset Scoop" if you 
+		think you made a mistake. Try to match as many ice cream scoops as you can within 60 seconds!</p>
+		<br><br>
+		<p style="text-align:center; margin-left:10em; margin-right:10em;">Game created by Federico Petri and Marcellus Jordie Muljana.</p>
+	</section>
+
+</div>
+<script src="icecreambar.js"></script>
+</body>
+</html>
